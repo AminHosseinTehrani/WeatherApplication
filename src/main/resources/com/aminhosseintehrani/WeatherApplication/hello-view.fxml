@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="500.0" prefWidth="500.0" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.aminhosseintehrani.WeatherApplication.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <Pane prefHeight="94.0" prefWidth="460.0">
+      <children>
+         <TextField fx:id="inputTextField" focusTraversable="false" layoutX="76.0" layoutY="42.0" prefHeight="25.0" prefWidth="233.0" promptText="Enter name of CIty" />
+         <Button fx:id="searchButton" layoutX="357.0" layoutY="42.0" mnemonicParsing="false" text="Search">
+            <opaqueInsets>
+               <Insets />
+            </opaqueInsets>
+            <effect>
+               <InnerShadow blurType="TWO_PASS_BOX" choke="0.21" height="15.14" radius="12.2" width="35.66">
+                  <color>
+                     <Color red="0.12409999966621399" green="0.7300000190734863" blue="0.2853827476501465" opacity="0.7200000286102295" />
+                  </color>
+               </InnerShadow>
+            </effect>
+            <cursor>
+               <Cursor fx:constant="DEFAULT" />
+            </cursor>
+         </Button>
+      </children>
+   </Pane>
+   <Pane maxHeight="100.0" prefHeight="86.0" prefWidth="460.0">
+      <children>
+         <Text fx:id="cityID" layoutY="73.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="470.962890625">
+            <font>
+               <Font size="61.0" />
+            </font>
+         </Text>
+      </children>
+      <VBox.margin>
+         <Insets bottom="100.0" />
+      </VBox.margin>
+   </Pane>
+   <Pane prefHeight="257.0" prefWidth="460.0">
+      <children>
+         <Text fx:id="textfortemp" fill="#22bf42" layoutX="58.0" layoutY="95.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="350.13671875">
+            <font>
+               <Font name="Century" size="81.0" />
+            </font>
+         </Text>
+         <ImageView fx:id="weatherimage" fitHeight="123.0" fitWidth="162.0" layoutX="149.0" layoutY="114.0" pickOnBounds="true" preserveRatio="true" />
+      </children>
+   </Pane>
+</VBox>
